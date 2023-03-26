@@ -1,0 +1,329 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    {% load static %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+    <div class="site-main-wrapper">
+        <button class="hamberger">
+            <img src="{% static 'images/icons8-menu.gif' %}" alt="">
+            
+        </button>
+        <div class="mobile-nav">
+            <button class="times"><img src="{% static 'images/icons8-menu-squared.gif' %}" alt=""></button>
+            
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pages">Pages</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </div>
+        <header>
+            <div class="container">
+                <nav id="main-nav" class="flex items-center justify-between">
+                    <div class="left flex items-center">
+                        <div class="branding">
+                            <img src="{% static 'images/gaurav_logo.png' %}" alt="">
+                            
+                        </div>
+                        <div>
+                            <a href="#">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#services">Services</a>
+                            <a href="#pages">Pages</a>
+                            <a href="#blog">Blog</a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a href="#contact"><button class="btn btn-primary">Contact</button></a>
+                    </div>
+                </nav>
+                <div class="hero flex items-center justify-between ">
+                    <div class="left flex1 flex justify-center">
+                        <img src="{% static 'images/PicsArt_01-01-01.17.53_preview_rev_1.png' %}" alt="">
+                    </div>
+                    <div class="right flex1">
+                        <h6>Gaurav Saini</h6>
+                        <h1>I am a Software <span>Developer</span></h1>
+                        <p>Testing gives you a snapshot. Portfolio gives you a movie.
+                        </p>
+                        <div>
+                            <a href="{% url 'download-resume' %}" download="cv"><button class="btn btn-secondary" >DOWNLOAD CV</button></a>
+
+                          
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <section id="about" class="about">
+            <div class="container flex items-center about-inner-wrap">
+                <div class="flex-1">
+                    <img class="about-me-image" src="{% static 'images/gaurav.png' %}" alt="">
+
+                </div>
+                <div class="flex-1 right">
+                    <h1>About <span>Me</span></h1>
+                    <h3>Hello! i'm Gaurav Saini</h3>
+                    <p>An engineering graduate from Sharda University (Gr. Noida). I graduated in the year 2019, and since then I have been working as a Web Developer. I have worked upon various tools and technlogies, troubleshooting, managing databases,
+                        and so on. I always had an interest in exploring Python Programming and its framework, and during my graduation,I have compleated many project using Python, Django and MySql database. As of now, I am looking forward to expanding my
+                        portfolio and enhance my technical skills as a Software Engineer. That’s a brief about me, and thanks for this opportunity.</p>
+                    <div class="social">
+                        <a href=" https://www.linkedin.com/in/gaurav-saini-8a9209238/"><img src="{% static 'images/linkd.png'%}"
+
+                                alt=""></a>
+                        <a href="https://github.com/gsgauravsaini
+                        "><img src="{% static 'images/git.webp' %}" alt=""></a>
+
+                        <a href="https://instagram.com/gsgauravsaini/="><img
+                                src="{% static 'images/Instagram_logo_2022.svg.webp' %}" alt=""></a>
+
+                        <a href="https://www.facebook.com/gs32039"><img src="{% static 'images/fb-icon-20.png' %}"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services">
+            <div class="container">
+                <h1 class="section-heading"><span>Our </span>Services</h1>
+                <p>We provide high standard clean website for your bussiness solutions.</p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="{% static 'images/web-development-icon-vector-21010689.jpg' %}" alt="">
+                        <h2>Full StackWeb Development</h2>
+                        <p>HTML,CSS,javascript,Bootstrap,MySql,Python,Django
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'images/software-development_4516869.png' %}" alt="">
+                        <h2>software development</h2>
+                        <p>Python</p>
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'images/modern-database-line-icon-modern-database-line-icon-premium-pictogram-isolated-white-background-vector-illustration-stroke-102136894.jpg' %}" alt="">
+                        <h2>Database</h2>
+                        <p>MySql</p>
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'images/network-vector-icon-symbol-creative-sign-seo-development-icons-collection-filled-flat-illustration-computer-mobile-212260383.jpg' %}" alt="">
+                        <h2>Web Developement</h2>
+                        <p>Troubleshoot, Debug, Python, Django, Flask</p>
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'images/R.png' %}" alt="">
+                        <h2>Photography</h2>
+                        <p>Nature and wildlife Photography</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="{% static 'images/bodybuilding.png' %}" alt="">
+                        <h2>GYM</h2>
+                        <p>Fitness and Bodybuilding</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="freelancer">
+            <h1>I am available for freelancer</h1>
+            <p>We provide high standard clean website for your bussiness solution </p>
+            <a href="{% url 'download-resume' %}" download="cv"><button class="btn btn-secondary" >DOWNLOAD CV</button></a>
+            
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <h1 class="section-heading"><span>Our</span>Experience</h1>
+                <p>Currently I am working in 3DLogic pvt ltd on the post of Web developer </p>
+                <div class="slider">
+                    <div class="slide">
+                        <img src="{% static 'images/3dlogic_logo.png' %}" alt="">
+                        <p>Nov 2021 -Present here </p>
+                        <span>Manisha Singh, Manager(3Dlogic pvt Ltd)</span>
+                    </div>
+                </div>
+                <div class="slider-dots"></div>
+            </div>
+        </section>
+        <section id="pages" class="work">
+            <div class="container">
+                <h1 class="section-heading"><span>Our</span>Works</h1>
+                <p>We provide high standard clean website for your bussiness solutions</p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="overlay">
+                            <span>E-Shop</span>
+                            <a href="https://github.com/gaurav-3dlogic/MyShop" target="_blank">https://github.com/gaurav-3dlogic/MyShop</a>
+                        </div>
+                        <img src="{% static 'images/ecommerce.jpg' %}" alt="">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Portfolio</span>
+                            <a href="https://github.com/gaurav-3dlogic/gauravportfolio" target="_blank"> https://github.com/gaurav-3dlogic/gauravportfolio</a>
+                        </div>
+                        <img src="{% static 'images/front end.jpg' %}" alt="">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Library Management</span>
+                            <a href="https://github.com/gaurav-3dlogic/django-library-application" target="_blank">https://github.com/gaurav-3dlogic/django-library-application</a>
+                        </div>
+                        <img src="{% static 'images/5-Signs-You-Need-to-Hire-a-Graphic-Designer-1.jpg' %}" alt="">
+                    </div>
+                    <!-- <div class="card">
+                        <div class="overlay">
+                            <span>Banking Simulation</span>
+                            <a href="https://github.com/gsgauravsaini/Banking-Simulation.git">https://github.com/gsgauravsaini/Banking-Simulation.git</a>
+                        </div>
+                        <img src="{% static 'images/bank.png' %}" alt="">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>E-Shop</span>
+                            <a href="https://github.com/kamaDjango/eshop.git">https://github.com/kamaDjango/eshop.git</a>
+                        </div>
+                        <img src="{% static 'images/ecommerce.jpg' %}" alt="">
+                    </div> -->
+                   <!--  <div class="card">
+                        <div class="overlay">
+                            <span>Gs FItness gym</span>
+                            <a href="https://github.com/gsgauravsaini/Banking-Simulation.git">https://github.com/gsgauravsaini/Banking-Simulation.git</a>
+                        </div>
+                        <img src="{% static 'images/bank.png' %}" alt="">
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <section id="blog" class="blog">
+            <div class="container">
+                <h1 class="section-heading"><span>Our</span>Blog</h1>
+                <p>I Love Photography, I love Food, and I Love travelling, and to put these three things together would first be the ultimate Dream </p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="{% static 'images/pexels-levent-simsek-3689269.jpg' %}" alt="">
+                        </div>
+                        <div class="card-content">
+                            <a href="#">
+                                <h1>Photography</h1>
+                            </a>
+                            <span>May 15, 2018</span>
+                            <p>If you are out there shooting, things will happen for you. If you’re not out there, you’ll only hear about it</p>
+                            <a href="#ourblog">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="{% static 'images/close-up-chicken-with-rice-cooked-indian-style.jpg' %}" alt="">
+                        </div>
+                        <div class="card-content">
+                            <a href="#">
+                                <h1>Cooking</h1>
+                            </a>
+                            <span>22 May, 2018</span>
+                            <p>Cooking is like painting or writing a song. Just as there are only so many notes or colors, there are only so many flavors—it’s how you combine them that sets you apart</p>
+                            <a href="#ourblog">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="{% static 'images/pexels-lina-kivaka-1879305.jpg' %}" alt="">
+                        </div>
+                        <div class="card-content">
+                            <a href="#">
+                                <h1>Travelling</h1>
+                            </a>
+                            <span>30 December, 2020</span>
+                            <p>If you’re twenty-two, physically fit, hungry to learn and be better, I urge you to travel – as far and as widely as possible. Sleep on floors if you have to. Find out how other people live and eat and cook.</p>
+                            <a href="#ourblog">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h1 class="section-heading">Contact<span>Us</span></h1>
+                <p>If you have any further questions or would like to contact us for additional help, please feel free to reach out to us via our website or social media acoounts. </p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="{% static 'images/call-icon-vector-noisy-phone-flat-calling-symbol-isolated-white-background-illustration-171294117.jpg' %}" alt="">
+                        <h1>Call us on </h1>
+                        <h6>9540809547</h6>
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'images/mail.jpg' %}" alt="">
+                        <h1>Email us at </h1>
+                        <h6>gs3dlogic@gmail.com</h6>
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'images/office.webp' %}" alt="">
+                        <h1>Visit Office</h1>
+                        <h6>Anupshahr Bulandshahr</h6>
+                    </div>
+                </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            {% for i in messages %}
+            <div class="alert alert-success" role="alert">
+                {{i}}
+            </div><br><br>
+             {% endfor %}
+                <form method="POST" action="">
+                    {% csrf_token %}
+                    <div class="input-wrap">
+                        <input type="text" name="name" placeholder="Your Name">
+                        <input type="email" name="email" placeholder="Your email">
+                    </div>
+                    <div class="input-wrap-2">
+                        <input type="text" placeholder="Your Subject" name="subject">
+                        <textarea id="" cols="30" rows="10" name="message" placeholder="Your Message.."></textarea>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <img class="footer-logo" src="{% static  'images/gaurav_logo.png' %}" alt="">
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/gaurav-saini-8a9209238/"><img src="{% static 'images/linkd.png' %}"
+                    alt=""></a>
+                <a href="https://github.com/gaurav-3dlogic
+            "><img src="{% static 'images/git.webp' %}" alt=""></a>
+                <a href="https://instagram.com/gsgauravsaini/="><img
+                    src="{% static 'images/Instagram_logo_2022.svg.webp' %}" alt=""></a>
+                <a href="https://www.facebook.com/gs32039"><img src="{% static 'images/fb-icon-20.png' %}"
+                    alt=""></a>
+            </div>
+            <div class="copyright">
+                Copyright 2020 @Gaurav Saini all right reserved
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- <script src="./js/app.js"></script> -->
+    <script src="{% static 'js/app.js' %}"></script>  
+</body>
+
+</html>
